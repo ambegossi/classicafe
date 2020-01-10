@@ -1,0 +1,111 @@
+/* Intro */
+
+.intro-interna {
+    background: url('../img/page-cafes/bg-cafes.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 225px 0;
+    text-align: center;
+}
+
+.intro-interna h1,h2 {
+    font-weight: normal;
+    color: #fff;
+}
+
+.intro-interna h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.intro-interna h2 {
+    max-width: 545px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+/* Menu Cafés */
+
+.menu-cafes {
+    padding: 55px 0 70px 0;
+}
+
+.menu-cafes-box {
+    margin: 0 auto;
+    max-width: 690px;
+    height: 50px;
+    background: #B89D64;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-cafes-box h3 {
+    text-transform: uppercase;
+    font-size: 1.125em;
+    color: #fff;
+}
+
+.menu-cafes-box h3:hover {
+    color: #693E32;
+}
+
+/* Lista Cafés */
+
+.lista-cafes {
+    padding: 0 0 55px 0;
+}
+
+.lista-cafes h2 {
+    color: #484b4d;
+}
+
+.cafe-item {
+    padding: 30px 0;
+}
+
+.cafe-info h2 {
+    color: #484B4D;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cafe-info p {
+    color: #484B4D;
+}
+
+.cafe-img, .cafe-info {
+    flex: 1;
+    margin: 0 75px 0 0;
+}
+
+.cafe-info {
+    align-self: center;
+    max-width: 305px;
+}
+
+.cafe-img {
+    max-width: 260px;
+}
+
+.cafe-img img {
+    display: block;
+}
+
+.cafe-preco {
+    flex: 1;
+    text-align: right;
+    align-self: center;
+}
+
+.cafe-preco p{
+    font-size: 1.5em;
+    color: #693E32;
+    font-weight: bold;
+}
+
+/* Contato */
+
+.contato {
+    background: #F5F5F5;
+}

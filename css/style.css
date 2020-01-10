@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-/* Reset */
+/* Reset e Estilos Gerais*/
 
 body, h1, h2, h3, p, ul {
     padding: 0px;
@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Menu */
 
 .menu {
@@ -51,6 +55,10 @@ a {
 }
 
 .menu-nav a:hover {
+    color: #B89D64;
+}
+
+.menu-nav a.menu_ativo {
     color: #B89D64;
 }
 
@@ -88,7 +96,7 @@ a {
     display: flex;
 }
 
-.intro-texto a{
+.redes-sociais a{
     line-height: 35px;
     width: 30px;
     height: 30px;
@@ -377,3 +385,108 @@ a {
     color: #fff;
     font-family: 'Playfair Display', serif;
 }
+
+/* Contato */
+
+.contato {
+    padding: 55px 0;
+}
+
+.contato-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-conteudo{
+    justify-content: center;
+}
+
+.contato-img, .contato-info {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.contato-img img {
+    display: block;
+    max-width: 100%;
+}
+
+.contato-info {
+    text-align: center;
+}
+
+.contato h2{
+    font-weight: normal;
+    color: #484B4D;
+}
+
+.contato h2::after {
+    content: '';
+    display: block;
+	width: 150px;
+	height: 2px;
+	background: #693E32;
+	margin: 1px auto 25px auto;
+}
+
+.contato-info {
+    flex: 1;
+}
+
+.contato-info .redes-sociais {
+    justify-content: center;
+    align-self: center;
+}
+
+.header-endereco, .header-telefone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.endereco-icone:before{
+    content: url("../img/contato/endereco-icone.svg");
+}
+
+.telefone-icone:before{
+    content: url("../img/contato/telefone-icone.svg");
+    margin-right: 5px;
+}
+
+.contato-info h3 {
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+}
+
+.contato-info p {
+    margin-bottom: 25px;
+    color: #484B4D;
+}
+
+.contato-info .redes-sociais a {
+    background-color:#484B4D;
+    border: 0px;
+    margin: 0 5px;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-info .redes-sociais a:hover {
+    background-color:#693E32;
+}
+
+/* Footer */
+
+.copy{
+    width: 100%;
+    height: 60px;
+    background: #271F1B;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    margin-top: -3px;
+}
+
