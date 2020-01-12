@@ -24,13 +24,13 @@
     font-size: 1.5em;
 }
 
-/* Menu Cafés */
+/* Menu Produtos */
 
-.menu-cafes {
+.menu-produtos {
     padding: 55px 0 70px 0;
 }
 
-.menu-cafes-box {
+.menu-produtos-box {
     margin: 0 auto;
     max-width: 690px;
     height: 50px;
@@ -40,65 +40,65 @@
     align-items: center;
 }
 
-.menu-cafes-box h3 {
+.menu-produtos-box h3 {
     text-transform: uppercase;
     font-size: 1.125em;
     color: #fff;
 }
 
-.menu-cafes-box h3:hover {
+.menu-produtos-box h3:hover {
     color: #693E32;
 }
 
-/* Lista Cafés */
+/* Lista Produtos */
 
-.lista-cafes {
+.lista-produtos {
     padding: 0 0 55px 0;
 }
 
-.lista-cafes h2 {
+.lista-produtos h2 {
     color: #484b4d;
 }
 
-.cafe-item {
+.produto-item {
     padding: 30px 0;
 }
 
-.cafe-info h2 {
+.produto-info h2 {
     color: #484B4D;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.cafe-info p {
+.produto-info p {
     color: #484B4D;
 }
 
-.cafe-img, .cafe-info {
+.produto-img, .produto-info {
     flex: 1;
     margin: 0 75px 0 0;
 }
 
-.cafe-info {
+.produto-info {
     align-self: center;
     max-width: 305px;
 }
 
-.cafe-img {
+.produto-img {
     max-width: 260px;
 }
 
-.cafe-img img {
+.produto-img img {
     display: block;
 }
 
-.cafe-preco {
+.produto-preco {
     flex: 1;
     text-align: right;
     align-self: center;
 }
 
-.cafe-preco p{
+.produto-preco p{
     font-size: 1.5em;
     color: #693E32;
     font-weight: bold;
