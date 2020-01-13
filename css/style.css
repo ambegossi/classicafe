@@ -23,6 +23,13 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 739px) {
+    .container {
+        flex-direction: column;
+        max-width: 300px;
+    }
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
@@ -62,8 +69,13 @@ html{
     color: #B89D64;
 }
 
+.menu-logo {
+    margin: 0 10px;
+}
+
 .menu-nav {
     flex: 1;
+    margin: 0 10px;
     align-self: center;
 }
 
@@ -71,6 +83,11 @@ html{
     float: right;
     display: flex;
     list-style: none;
+}
+
+.menu-nav ul li {
+    flex: 1;
+    margin: 0 10px;
 }
 
 /* Intro */
@@ -81,6 +98,12 @@ html{
     color: #fff;
     padding: 225px 0;
 }
+@media (max-width: 739px) {
+    .intro{
+        background: url('../img/bg-intro-mobile.png') no-repeat center center;
+        padding: 150px 0;
+    }
+}
 
 .intro-texto{
     flex-direction: column;
@@ -89,11 +112,14 @@ html{
 .intro-texto h1{
     font-size: 2.25em;
     font-weight: normal;
-    margin-bottom: 10px;
+    flex: 1;
+    margin: 0 10px 10px 10px;
 }
 
 .redes-sociais {
     display: flex;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .redes-sociais a{
@@ -123,6 +149,11 @@ html{
 
 .sobre-titulo {
     padding: 55px 0;
+}
+@media (max-width: 739px) {
+    .sobre-titulo{
+        margin: 0 10px;
+    }
 }
 
 .sobre-titulo a {
@@ -160,15 +191,30 @@ html{
     max-width: 960px;
     margin-bottom: 55px;
 }
+@media (max-width: 739px) {
+    .sobre-conteudo{
+        max-width: 300px;
+    }
+}
 
 .sobre-img, .sobre-info {
     flex: 1;
     margin: 0 10px;
 }
+@media (max-width: 739px) {
+    .sobre-img, .sobre-info{
+        margin: 0;
+    }
+}
 
 .sobre-img img {
     display: block;
     max-width: 100%;
+}
+@media (max-width: 739px) {
+    .sobre-img img{
+        margin-bottom: 20px;
+    }
 }
 
 .sobre-info {
@@ -204,12 +250,18 @@ html{
     text-align: center;
     padding: 55px 0;
 }
+@media (max-width: 739px) {
+    .ingredientes-perfeitos{
+        background: url('../img/ingredientes-perfeitos/bg-ingredientes-perfeitos-mobile.jpg') no-repeat center center;
+    }
+}
 
 .ingredientes-perfeitos h3{
     font-size: 0.875em;
     font-weight: normal;
     color: #B89D64;
 }
+
 
 .ingredientes-perfeitos > h2{
     font-size: 1.5em;
@@ -256,6 +308,12 @@ html{
 .ingredientes-item p {
     color: #693E32;
 }
+@media (max-width: 739px) {
+    .ingredientes-item p{
+        margin-bottom: 20px;
+    }
+}
+
 
 /* Cafés */
 
@@ -269,17 +327,41 @@ html{
     justify-content: space-between;
 }
 
+@media (max-width: 739px) {
+    .cafes .container{
+        max-width: 300px;
+    }
+}
+
 .cafes h2{
     display: flex;
     max-width: 960px;
-    margin: 0 auto 30px auto;
+    margin: 0 10px 30px 10px;
     color: #484B4D;
     font-weight: normal;
 }
 
 .cafes-item {
     flex: 1;
+    margin: 0 10px;
     max-width: 305px;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 739px) {
+    .cafes-item{
+        margin: 0;
+    }
+}
+
+.cafes-item img {
+    flex: 1;
+    display: block;
+    max-width: 100%;
+}
+
+.cafes-item p {
+    flex: 1;
 }
 
 .cafes-item p {
@@ -325,6 +407,11 @@ html{
 .acompanhamentos .container {
     justify-content: space-between;
     max-width: 960px;
+}
+@media (max-width: 739px) {
+    .acompanhamentos .container{
+        max-width: 300px;
+    }
 }
 
 .acompanhamentos h2 {
@@ -405,10 +492,20 @@ html{
     flex: 1;
     margin: 0 10px;
 }
+@media (max-width: 739px) {
+    .contato-img, .contato-info{
+        margin: 0;
+    }
+}
 
 .contato-img img {
     display: block;
     max-width: 100%;
+}
+@media (max-width: 739px) {
+    .contato-img img{
+        margin-bottom: 20px;
+    }
 }
 
 .contato-info {
