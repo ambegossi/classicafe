@@ -39,11 +39,7 @@
     justify-content: space-around;
     align-items: center;
 }
-@media (max-width: 739px) {
-    .menu-produtos-box {
-        max-width: 450px;
-    }
-}
+
 
 .menu-produtos-box h3 {
     text-transform: uppercase;
@@ -53,6 +49,17 @@
 
 .menu-produtos-box h3:hover {
     color: #693E32;
+}
+@media (max-width: 739px) {
+    .menu-produtos-box {
+        max-width: 450px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .menu-produtos-box h3 {
+        font-size: 0.875em;
+    }
 }
 
 /* Lista Produtos */
