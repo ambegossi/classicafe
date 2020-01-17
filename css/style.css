@@ -105,6 +105,10 @@ html{
     color: #B89D64;
 }
 
+.menu-nav a:hover {
+    color: #B89D64;
+}
+
 @media only screen and (max-width: 739px) {
 
 .menu-nav {
@@ -184,7 +188,6 @@ html{
 }
 	
 }
-
 
 
 /* Intro */
