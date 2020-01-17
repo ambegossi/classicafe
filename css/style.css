@@ -51,44 +51,141 @@ html{
     padding: 15px 0;
     position: absolute;
     width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
-.menu-nav a {
-    text-decoration: none;
-    color: #fff;
+.menu-nav {
+    margin: 5px 10px 0 10px;
+    text-align: right;
+}
+
+.menu-nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-nav li {
+	display: inline-block;
+	text-align: right;
+}
+
+.menu-nav li a {
+	display: block;
+	color: white;
+	padding: 15px 20px;
+	text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.875em;
-    padding: 10px;
+	float: left;
 }
 
-.menu-nav a:hover {
-    color: #B89D64;
+.menu nav li a::after {
+	content: '';
+	display: block;
+	background: #B89D64;
+	height: 2px;
+	width: 0;
+	transition: .3s;
+}
+
+.menu nav li a:hover::after, .menu nav li a.active::after {
+	width: 100%;
+}
+
+.menu-logo {
+    display: block;
+	color: white;
+	width: 200px;
+    float: left;
+    padding: 10px 10px 14px 20px;
 }
 
 .menu-nav a.menu_ativo {
     color: #B89D64;
 }
 
-.menu-logo {
-    margin: 0 10px;
-}
+@media only screen and (max-width: 739px) {
 
 .menu-nav {
-    flex: 1;
-    margin: 0 10px;
-    align-self: center;
+    margin-right: 0;
 }
 
-.menu-nav ul {
+.menu nav li a::after {
+    visibility: hidden;
+}
+
+.mobile-btn {
+    display: block;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-top: 4px solid;
+    margin: 15px 20px 0 0;
     float: right;
-    display: flex;
-    list-style: none;
+    position: relative;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
 }
 
-.menu-nav ul li {
-    flex: 1;
-    margin: 0 10px;
+.mobile-btn::after, .mobile-btn::before {
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background: currentColor;
+    position: relative;
+    transition: transform .2s ease;
 }
+
+.mobile-btn.active {
+    border-top-color: transparent;
+}
+
+.mobile-btn.active::after {
+    margin-top: 0px;
+    top: 2px;
+    transform: rotate(45deg);
+}
+
+.mobile-btn.active::before {
+    margin-top: 0px;
+    top: 6px;
+    transform: rotate(135deg);
+}
+
+.menu-nav.mobile-menu {
+	position: fixed;
+	background: white;
+	padding: 10px;
+	top: 60px;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(60px, 0px, 0px);
+    transition: .3s;
+}
+
+.menu-nav.mobile-menu.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.menu-nav.mobile-menu li {
+	display: block;
+}
+
+.menu-nav.mobile-menu li a {
+	border-top: 2px solid;
+	width: 100%;
+    text-align: center;
+    color: #693E32;
+}
+	
+}
+
+
 
 /* Intro */
 
@@ -101,6 +198,7 @@ html{
 @media (max-width: 739px) {
     .intro{
         background: url('../img/bg-intro-mobile.png') no-repeat center center;
+        background-size: cover;
         padding: 150px 0;
     }
 }
